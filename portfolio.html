@@ -29,9 +29,9 @@
             <span class="logo">WEB</span><span class="studio">STUDIO</span>
           </a>
           <ul class="nav-menu list">
-            <li class="item">
+            <li class="nav-menu-item">
               <a
-                class="page link"
+                class="nav-menu-page link"
                 href="./index.html"
                 target="_self"
                 rel="noreferrer noopener"
@@ -39,9 +39,9 @@
                 >Studio</a
               >
             </li>
-            <li class="item">
+            <li class="nav-menu-item">
               <a
-                class="page current link"
+                class="nav-menu-page current link"
                 href="./portfolio.html"
                 target="_self"
                 rel="noreferrer noopener"
@@ -49,20 +49,20 @@
                 >Portfolio</a
               >
             </li>
-            <li class="item">
-              <a class="page link" href="./index.html">Contacts</a>
+            <li class="nav-menu-item">
+              <a class="nav-menu-page link" href="./index.html">Contacts</a>
             </li>
           </ul>
         </nav>
 
         <ul class="contacts-menu list">
-          <li class="item">
-            <a class="contact link" href="mailto:info@devstudio.com"
+          <li class="contacts-menu-item">
+            <a class="contacts-menu-contact link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="contact link" href="tel:+110001111111">+110001111111</a>
+          <li class="contacts-menu-item">
+            <a class="contacts-menu-contact link" href="tel:+110001111111">+110001111111</a>
           </li>
         </ul>
       </div>
@@ -71,8 +71,8 @@
     <!-- main -->
     <main>
       <!-- section 1 filter -->
-      <section class="section">
-        <div class="container">
+      <section class="filters-section section">
+        <div class="filters-container container">
           <ul class="filters list">
             <li class="space">
               <button type="button" class="button filter current">All</button>
@@ -317,8 +317,8 @@
     </main>
 
     <!-- footer -->
-    <footer class="page-footer">
-      <div class="container">
+    <footer class="page-footer section">
+      <div class="page-footer-container container">
         <div class="footer">
           <!-- Footer Section 1 -->
           <div class="footer-address">
@@ -328,9 +328,9 @@
               rel="noreferrer noopener"
               title="logo-link"
             >
-              <span class="logo">WEB</span><span class="studio-2">STUDIO</span>
+              <span class="logo">WEB</span><span class="footer-studio-2">STUDIO</span>
             </a>
-            <p class="footer-description">
+            <p class="page-footer-description">
               Increase the flow of customers and<br />sales for your business
               with digital<br />marketing & growth solutions.
             </p>
@@ -340,59 +340,75 @@
           <div class="footer-block">
             <p class="footer-heading">Social media</p>
             <ul class="social-footer list">
-              <li class="icon-item">
+              <li class="social-footer-icon-item">
                 <a
-                  class="link"
+                  class="social-footer-link"
                   href="https://instagram.com"
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label="Link to Instagram"
                 >
-                  <svg class="icon" width="24" height="24">
+                  <svg class="social-footer-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="icon-item">
+              <li class="social-footer-icon-item">
                 <a
-                  class="link"
+                  class="social-footer-link"
                   href="https://twitter.com"
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label="Link to Twitter"
                 >
-                  <svg class="icon" width="24" height="24">
+                  <svg class="social-footer-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-twitter-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="icon-item">
+              <li class="social-footer-icon-item">
                 <a
-                  class="link"
+                  class="social-footer-link"
                   href="https://facebook.com"
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label="Link to Facebook"
                 >
-                  <svg class="icon" width="24" height="24">
+                  <svg class="social-footer-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-facebook-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="icon-item">
+              <li class="social-footer-icon-item">
                 <a
-                  class="link"
+                  class="social-footer-link"
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label="Link to LinkedIn"
                 >
-                  <svg class="icon" width="24" height="24">
+                  <svg class="social-footer-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-linkedin-2"></use>
                   </svg>
                 </a>
               </li>
             </ul>
+          </div>
+
+          <!-- SUBSCRIBE FORM HW-6 -->
+          <div class="footer-form-subscribe">
+            <p class="footer-form-heading">Subscribe</p>
+            <form class="footer-form">
+              <label class="footer-form-label">
+              <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" required />
+              </label>
+
+              <button type="submit" class="subscribe-button">Subscribe
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>

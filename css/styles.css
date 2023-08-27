@@ -52,10 +52,6 @@ img {
   text-decoration: none;
 }
 
-.logo-link > span {
-  font-size: 18px;
-}
-
 .logo,
 .studio {
   display: inline-block;
@@ -64,12 +60,14 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 1.2;
+
+  font-size: 18px;
 }
 
-.studio,
-.studio-2 {
+.studio {
   color: var(--navyblue);
   font-weight: 700;
+  font-size: 18px;
 }
 
 .list {
@@ -82,8 +80,8 @@ img {
   margin-left: 93px;
 }
 
-.nav-menu .page,
-.contacts-menu .contact {
+.nav-menu-page,
+.contacts-menu-contact {
   display: block;
   padding-top: 32px;
   padding-bottom: 31px;
@@ -98,25 +96,25 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-menu .contact {
+.contacts-menu-contact {
   color: var(--slate);
   font-weight: 400;
 }
 
-.nav-menu .page:hover,
-.nav-menu .page:focus,
-.nav-menu .page.current,
-.contacts-menu .contact:hover,
-.contacts-menu .contact:focus {
+.nav-menu-page:hover,
+.nav-menu-page:focus,
+.nav-menu-page.current,
+.contacts-menu-contact:hover,
+.contacts-menu-contact:focus {
   color: var(--iris);
 }
 
-.nav-menu .page.current {
+.nav-menu-page.current {
   position: relative;
   align-items: center;
 }
 
-.nav-menu .page.current::after {
+.nav-menu-page.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -157,8 +155,8 @@ body {
   margin-left: auto;
 }
 
-.nav-menu .item:not(:last-child),
-.contacts-menu .item:not(:last-child) {
+.nav-menu-item:not(:last-child),
+.contacts-menu-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -223,7 +221,7 @@ body {
   margin-top: -30px;
 }
 
-.benefits .icon {
+.benefits-icon {
   margin-bottom: 30px;
   border-radius: 4px;
   width: 264px;
@@ -235,13 +233,13 @@ body {
   background-color: var(--cloud);
 }
 
-.benefits .item {
+.benefits-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.benefits .title {
+.benefits-title {
   margin-bottom: 10px;
   color: var(--navyblue);
   font-weight: 500;
@@ -249,7 +247,7 @@ body {
   line-height: 1.14;
 }
 
-.benefits .description {
+.benefits-description {
   color: var(--slate);
   line-height: 1.71;
   font-size: 16px;
@@ -274,7 +272,7 @@ body {
   margin-right: -30px;
 }
 
-.what-we-do .item {
+.what-we-do-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -295,7 +293,7 @@ body {
   margin-top: -30px;
 }
 
-.team.list .item {
+.team-item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 4 - 30px);
@@ -308,19 +306,19 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team .item:hover {
+.team-item:hover {
   box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1), 1px 2px 2px rgba(0, 0, 0, 0.08),
     1px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.team .name,
-.team .position {
+.team-name,
+.team-position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
-.team .name {
+.team-name {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 20px;
@@ -358,7 +356,7 @@ body {
   gap: 24px;
 }
 
-.social-team .link {
+.social-team-link {
   width: 100%;
   height: 100%;
 
@@ -373,56 +371,39 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-team .icon {
+/* svg */
+.social-team-icon {
   width: 16px;
   height: 16px;
   fill: currentColor;
 }
 
-.icon-item {
+/* list item */
+.social-team-icon-item {
   width: 40px;
   height: 40px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-item .link:hover,
-.icon-item .link:focus {
+.social-team-link:hover,
+.social-team-link:focus,
+.social-footer-link:hover,
+.social-footer-link:focus {
   background-color: var(--green);
 }
 
-.social-footer .link {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-
-  color: var(--cloud);
-  background-color: var(--iris);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-footer .icon {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-}
-
-.partners.list {
+.partners-list {
   display: flex;
   gap: 30px;
 }
 
-.partners .item {
+.partners-item {
   width: calc((100% - 150px) / 6);
   height: 90px;
 }
 
-.partners .link {
+.partners-link {
   width: 100%;
   height: 100%;
 
@@ -439,30 +420,42 @@ body {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.partners.list .icon {
+.partners-icon {
   fill: currentColor;
 }
 
-.partners.list .link:hover,
-.partners.list .link:focus {
+.partners-link:hover,
+.partners-link:focus {
   color: var(--ocean);
   border-color: var(--ocean);
 }
 
-.substrate {
-  background-color: white;
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: 0;
+.social-footer-link {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  color: var(--cloud);
+  background-color: var(--iris);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-address .logo-link {
-  margin-bottom: 20px;
+.social-footer-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
-.footer-address {
-  margin-top: 12px;
-  margin-left: 25px;
+.social-footer-icon-item {
+  width: 40px;
+  height: 40px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-footer {
@@ -482,11 +475,22 @@ body {
   align-items: baseline;
 }
 
-.page-footer .studio-2 {
+.footer-studio-2 {
   color: var(--cloud);
+  font-weight: 700;
+  font-size: 18px;
 }
 
-.page-footer .footer-description {
+.footer-logo-link {
+  margin-bottom: 20px;
+}
+
+.footer-address {
+  margin-top: 12px;
+  margin-left: 25px;
+}
+
+.page-footer-description {
   color: var(--cloud);
   line-height: 1.5;
   font-size: 16px;
@@ -516,6 +520,13 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 16px;
+}
+
+.substrate {
+  background-color: white;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .filters {
