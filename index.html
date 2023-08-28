@@ -18,59 +18,65 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container menu">
-        <nav class="navigation">
-          <a
-            class="logo-link"
-            href="./index.html"
-            rel="noreferrer noopener"
-            title="logo-link"
-          >
-            <span class="logo">WEB</span><span class="studio">STUDIO</span>
-          </a>
-          <ul class="nav-menu list">
-            <li class="nav-menu-item">
+      <div class="container">
+        <div class="menu">
+          <nav class="navigation">
+            <a
+              class="logo-link"
+              href="./index.html"
+              rel="noreferrer noopener"
+              title="logo-link"
+            >
+              <span class="logo">WEB</span><span class="studio">STUDIO</span>
+            </a>
+            <ul class="nav-menu list">
+              <li class="nav-menu-item">
+                <a
+                  class="nav-menu-page current link"
+                  href="./index.html"
+                  target="_self"
+                  rel="noreferrer noopener"
+                  title="studio"
+                  >Studio</a
+                >
+              </li>
+              <li class="nav-menu-item">
+                <a
+                  class="nav-menu-page link"
+                  href="./portfolio.html"
+                  target="_self"
+                  rel="noreferrer noopener"
+                  title="portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-menu-item">
+                <a class="nav-menu-page link" href="./index.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts-menu list">
+            <li class="contacts-menu-item">
               <a
-                class="nav-menu-page current link"
-                href="./index.html"
-                target="_self"
-                rel="noreferrer noopener"
-                title="studio"
-                >Studio</a
+                class="contacts-menu-contact link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
             </li>
-            <li class="nav-menu-item">
-              <a
-                class="nav-menu-page link"
-                href="./portfolio.html"
-                target="_self"
-                rel="noreferrer noopener"
-                title="portfolio"
-                >Portfolio</a
+            <li class="contacts-menu-item">
+              <a class="contacts-menu-contact link" href="tel:+11)0001111111"
+                >+11(000)111-11-11</a
               >
-            </li>
-            <li class="nav-menu-item">
-              <a class="nav-menu-page link" href="./index.html">Contacts</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="contacts-menu list">
-          <li class="contacts-menu-item">
-            <a class="contacts-menu-contact link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-menu-item">
-            <a class="contacts-menu-contact link" href="tel:+110001111111">+110001111111</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <!--section 1-->
-      <section class="hero">
+      <section class="hero-section section">
         <div class="hero-container container">
           <h1 class="hero-title">
             Effective Solutions
@@ -86,7 +92,7 @@
       <!--section 2-->
       <section class="section">
         <div class="benefits-container container">
-          <ul class="benefits list">
+          <ul class="benefits-list">
             <li class="benefits-item">
               <div class="benefits-icon">
                 <svg class="antenna" width="64" height="64">
@@ -143,8 +149,8 @@
       <!--Seection 3-->
       <section class="section no-top-padding">
         <div class="what-we-do-container container">
-          <h2 class="section-title">What Are We Doing</h2>
-          <ul class="what-we-do list">
+          <h2 class="what-we-do-title">What Are We Doing</h2>
+          <ul class="what-we-do-list list">
             <li class="what-we-do-item">
               <img
                 src="./images/what-we-do-1.jpg"
@@ -179,7 +185,7 @@
       <!--Seection 4-->
       <section class="section bg-team">
         <div class="team-container container">
-          <h2 class="section-title">Our Team</h2>
+          <h2 class="team-section-title">Our Team</h2>
           <ul class="team list">
             <li class="team-item">
               <img
@@ -448,7 +454,7 @@
       <!--Seection 5-->
       <section class="section clients">
         <div class="clients-container container">
-          <h2 class="section-title">Customers</h2>
+          <h2 class="partners-section-title">Customers</h2>
           <ul class="partners-list list">
             <li class="partners-item">
               <a
@@ -540,12 +546,13 @@
           <!-- Footer Section 1 -->
           <div class="footer-address">
             <a
-              class="logo-link"
+              class="footer-logo-link"
               href="./index.html"
               rel="noreferrer noopener"
               title="logo-link"
             >
-              <span class="logo">WEB</span><span class="footer-studio-2">STUDIO</span>
+              <span class="logo">WEB</span
+              ><span class="footer-studio-2">STUDIO</span>
             </a>
             <p class="page-footer-description">
               Increase the flow of customers and<br />sales for your business
@@ -554,7 +561,7 @@
           </div>
 
           <!-- Footer Section 2 -->
-          <div class="footer-block">
+          <div class="footer-block section">
             <p class="footer-heading">Social media</p>
             <ul class="social-footer list">
               <li class="social-footer-icon-item">
@@ -617,11 +624,18 @@
             <p class="footer-form-heading">Subscribe</p>
             <form class="footer-form">
               <label class="footer-form-label">
-              <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" required />
+                <input
+                  class="footer-form-input"
+                  type="email"
+                  name="user-email"
+                  placeholder="E-mail"
+                  required
+                />
               </label>
 
-              <button type="submit" class="subscribe-button">Subscribe
-                <svg class="icon" width="24" height="24">
+              <button type="submit" class="subscribe-button">
+                Subscribe
+                <svg class="subscribe-button-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-subscribe"></use>
                 </svg>
               </button>
@@ -643,11 +657,15 @@
         <!-- HOMEWORK 6 Modal -->
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form" autocomplete="on">
-
           <!-- Name -->
           <label class="form-field">
             <span class="form-label">Name</span>
-            <input class="form-input current" type="text" name="user-name"  required />
+            <input
+              class="form-input current"
+              type="text"
+              name="user-name"
+              required
+            />
             <svg class="icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
@@ -656,7 +674,7 @@
           <!-- Phone -->
           <label class="form-field">
             <span class="form-label">Phone</span>
-            <input class="form-input" type="tel" name="user-number"  required />
+            <input class="form-input" type="tel" name="user-number" required />
             <svg class="icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -665,7 +683,7 @@
           <!-- Email -->
           <label class="form-field">
             <span class="form-label">Email</span>
-            <input class="form-input" type="user-email" name="email"  required />
+            <input class="form-input" type="user-email" name="email" required />
             <svg class="icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
@@ -675,26 +693,37 @@
           <label class="form-field">
             <span class="form-label">Comment</span>
             <textarea
-              class="form-textarea" 
+              class="form-textarea"
               name="user-comment"
               rows="8"
-              placeholder="Text input"></textarea>
+              placeholder="Text input"
+            ></textarea>
           </label>
 
           <!-- Terms and Privacy Policy -->
           <label class="form-agreement">
-            <input 
-            class="form-checkbox" type="checkbox" name="agreement" value="agree" />
+            <input
+              class="form-checkbox"
+              type="checkbox"
+              name="agreement"
+              value="agree"
+            />
 
             <svg class="icon-checkmark" width="16" height="16">
               <use href="./images/icons.svg#icon-checkmark"></use>
             </svg>
 
-            <span class="form-terms">I accept the terms and conditions of the&nbsp;<a class="form-privacy" href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a></span>
+            <span class="form-terms"
+              >I accept the terms and conditions of the&nbsp;<a
+                class="form-privacy"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy</a
+              ></span
+            >
           </label>
-          <button type="submit" class="modal-send">
-            Send
-          </button>
+          <button type="submit" class="modal-send">Send</button>
         </form>
       </div>
     </div>
